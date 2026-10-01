@@ -1,115 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TravelGo - Tourist Packages</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serenity Spa | Relax. Restore. Rejuvenate.</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">Travel<span>Go</span></div>
+  <!-- Navigation -->
+  <header class="navbar">
+    <a href="#" class="logo">Serenity<span>SPA</span></a>
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#packages">Packages</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav id="navMenu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Packages</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Explore The World With Us</h1>
-            <p>Discover beautiful destinations and unforgettable adventures.</p>
-            <a href="#packages" class="btn">Explore Packages</a>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="subtitle">WELCOME TO SERENITY SPA</p>
+
+      <h1>Relax Your Body.<br><span>Refresh Your Soul.</span></h1>
+
+      <p class="hero-text">
+        Escape the everyday and discover a peaceful experience
+        designed to restore your body and mind.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#booking" class="btn">Book an Appointment</a>
+        <a href="#services" class="btn btn-outline">Explore Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="about-image">
+      <div class="image-card">
+        <span>10+</span>
+        <p>Years of Wellness</p>
+      </div>
+    </div>
+
+    <div class="about-content">
+      <p class="section-label">ABOUT SERENITY</p>
+
+      <h2>A peaceful place to <span>reconnect</span> with yourself.</h2>
+
+      <p>
+        At Serenity Spa, we believe true wellness begins with taking
+        time for yourself. Our tranquil environment and experienced
+        therapists create a relaxing escape from your busy lifestyle.
+      </p>
+
+      <p>
+        From therapeutic massages to luxurious facials, every treatment
+        is carefully designed to help you feel refreshed and renewed.
+      </p>
+
+      <a href="#services" class="text-btn">Discover More →</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services section" id="services">
+    <div class="section-heading">
+      <p class="section-label">OUR SERVICES</p>
+      <h2>Relaxation designed <span>for you</span></h2>
+      <p>
+        Choose from our range of wellness treatments created
+        to nourish your body and calm your mind.
+      </p>
+    </div>
+
+    <div class="service-grid">
+
+      <div class="service-card">
+        <div class="service-icon">🌿</div>
+        <h3>Aromatherapy</h3>
+        <p>
+          Essential oils and gentle techniques to relax your senses
+          and create a peaceful state of mind.
+        </p>
+        <span>60 min · $65</span>
+      </div>
+
+      <div class="service-card featured">
+        <div class="service-icon">💆</div>
+        <h3>Full Body Massage</h3>
+        <p>
+          A soothing full-body massage designed to release tension
+          and restore your natural balance.
+        </p>
+        <span>90 min · $95</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">✨</div>
+        <h3>Luxury Facial</h3>
+        <p>
+          A rejuvenating facial treatment that leaves your skin
+          refreshed, hydrated and glowing.
+        </p>
+        <span>60 min · $75</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🧖</div>
+        <h3>Hot Stone Therapy</h3>
+        <p>
+          Warm stones combined with massage techniques to deeply
+          relax muscles and reduce stress.
+        </p>
+        <span>75 min · $85</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Quote Banner -->
+  <section class="quote">
+    <div>
+      <p>"Self-care is not a luxury. It is a necessity."</p>
+      <span>— Serenity Spa</span>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing section" id="pricing">
+    <div class="section-heading">
+      <p class="section-label">SPA PACKAGES</p>
+      <h2>Choose your <span>escape</span></h2>
+    </div>
+
+    <div class="pricing-grid">
+
+      <div class="price-card">
+        <h3>Relax</h3>
+        <div class="price">$79</div>
+        <p>Perfect for a quick escape.</p>
+
+        <ul>
+          <li>✓ 60 min massage</li>
+          <li>✓ Aromatherapy</li>
+          <li>✓ Herbal tea</li>
+          <li>✓ Relaxation lounge</li>
+        </ul>
+
+        <button class="package-btn" data-package="Relax Package">
+          Choose Package
+        </button>
+      </div>
+
+      <div class="price-card popular">
+        <div class="popular-tag">MOST POPULAR</div>
+
+        <h3>Rejuvenate</h3>
+        <div class="price">$149</div>
+        <p>A complete wellness experience.</p>
+
+        <ul>
+          <li>✓ 90 min full body massage</li>
+          <li>✓ Luxury facial</li>
+          <li>✓ Aromatherapy</li>
+          <li>✓ Herbal tea</li>
+          <li>✓ Sauna access</li>
+        </ul>
+
+        <button class="package-btn" data-package="Rejuvenate Package">
+          Choose Package
+        </button>
+      </div>
+
+      <div class="price-card">
+        <h3>Ultimate</h3>
+        <div class="price">$229</div>
+        <p>The ultimate spa experience.</p>
+
+        <ul>
+          <li>✓ Full body massage</li>
+          <li>✓ Luxury facial</li>
+          <li>✓ Hot stone therapy</li>
+          <li>✓ Sauna access</li>
+          <li>✓ Private relaxation room</li>
+        </ul>
+
+        <button class="package-btn" data-package="Ultimate Package">
+          Choose Package
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section class="booking section" id="booking">
+    <div class="booking-container">
+
+      <div class="booking-info">
+        <p class="section-label">BOOK YOUR VISIT</p>
+        <h2>Make time for <span>yourself.</span></h2>
+
+        <p>
+          Ready to relax? Schedule your treatment and let us
+          take care of the rest.
+        </p>
+
+        <div class="contact-info">
+          <p>📍 123 Serenity Lane, Wellness City</p>
+          <p>📞 +1 234 567 890</p>
+          <p>✉ hello@serenityspa.com</p>
         </div>
-    </section>
+      </div>
 
-    <!-- Packages -->
-    <section class="packages" id="packages">
-        <h2>Popular Tourist Packages</h2>
-        <p class="section-text">Choose your perfect holiday destination</p>
+      <form id="bookingForm">
 
-        <div class="package-container">
-
-            <div class="package-card">
-                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Mountain">
-                <div class="card-content">
-                    <h3>Manali Adventure</h3>
-                    <p>Enjoy mountains, rivers and exciting adventures.</p>
-                    <h4>₹15,000 / person</h4>
-                    <button onclick="selectPackage('Manali Adventure', 15000)">
-                        Book Now
-                    </button>
-                </div>
-            </div>
-
-            <div class="package-card">
-                <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=800&q=80" alt="Beach">
-                <div class="card-content">
-                    <h3>Goa Beach Holiday</h3>
-                    <p>Relax on beautiful beaches and enjoy the nightlife.</p>
-                    <h4>₹12,000 / person</h4>
-                    <button onclick="selectPackage('Goa Beach Holiday', 12000)">
-                        Book Now
-                    </button>
-                </div>
-            </div>
-
-            <div class="package-card">
-                <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80" alt="Bali">
-                <div class="card-content">
-                    <h3>Bali Escape</h3>
-                    <p>Experience temples, beaches and tropical landscapes.</p>
-                    <h4>₹35,000 / person</h4>
-                    <button onclick="selectPackage('Bali Escape', 35000)">
-                        Book Now
-                    </button>
-                </div>
-            </div>
-
+        <div class="form-row">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Email Address" required>
         </div>
-    </section>
 
-    <!-- Booking Section -->
-    <section class="booking" id="contact">
-        <h2>Book Your Trip</h2>
+        <div class="form-row">
+          <input type="date" id="date" required>
 
-        <form id="bookingForm">
+          <select id="service" required>
+            <option value="">Select Service</option>
+            <option>Aromatherapy</option>
+            <option>Full Body Massage</option>
+            <option>Luxury Facial</option>
+            <option>Hot Stone Therapy</option>
+            <option>Relax Package</option>
+            <option>Rejuvenate Package</option>
+            <option>Ultimate Package</option>
+          </select>
+        </div>
 
-            <label for="name">Full Name</label>
-            <input type="text" id="name" placeholder="Enter your name" required>
+        <select id="time" required>
+          <option value="">Preferred Time</option>
+          <option>10:00 AM</option>
+          <option>12:00 PM</option>
+          <option>2:00 PM</option>
+          <option>4:00 PM</option>
+          <option>6:00 PM</option>
+        </select>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Enter your email" required>
+        <textarea
+          id="message"
+          placeholder="Any special requests?"
+          rows="5">
+        </textarea>
 
-            <label for="package">Selected Package</label>
-            <input type="text" id="package" readonly placeholder="Select a package above">
+        <button type="submit" class="btn">
+          Confirm Appointment
+        </button>
 
-            <label for="people">Number of People</label>
-            <input type="number" id="people" min="1" value="1" required>
+        <p id="formMessage"></p>
 
-            <p class="total">
-                Total Price: ₹<span id="total">0</span>
-            </p>
+      </form>
+    </div>
+  </section>
 
-            <button type="submit" class="submit-btn">Confirm Booking</button>
-        </form>
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="footer-content">
 
-        <p id="message"></p>
-    </section>
+      <div>
+        <a href="#" class="logo">Serenity<span>SPA</span></a>
+        <p>
+          Your sanctuary for relaxation, wellness and renewal.
+        </p>
+      </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 TravelGo. All Rights Reserved.</p>
-    </footer>
+      <div>
+        <h4>Opening Hours</h4>
+        <p>Monday – Friday: 9 AM – 8 PM</p>
+        <p>Saturday: 10 AM – 7 PM</p>
+        <p>Sunday: 10 AM – 5 PM</p>
+      </div>
 
-    <script src="script.js"></script>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="socials">
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Pinterest</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      © 2026 Serenity Spa. All Rights Reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
